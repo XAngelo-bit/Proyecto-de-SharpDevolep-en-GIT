@@ -47,6 +47,7 @@ namespace CalculadoraSharpDevolep
 			this.btnLimpiar = new System.Windows.Forms.Button();
 			this.lblRespuesta = new System.Windows.Forms.Label();
 			this.btnModulo = new System.Windows.Forms.Button();
+			this.btnFormula = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblNumero1
@@ -131,7 +132,7 @@ namespace CalculadoraSharpDevolep
 			// 
 			// lblRespuesta
 			// 
-			this.lblRespuesta.Location = new System.Drawing.Point(11, 360);
+			this.lblRespuesta.Location = new System.Drawing.Point(11, 420);
 			this.lblRespuesta.Name = "lblRespuesta";
 			this.lblRespuesta.Size = new System.Drawing.Size(568, 86);
 			this.lblRespuesta.TabIndex = 9;
@@ -146,11 +147,22 @@ namespace CalculadoraSharpDevolep
 			this.btnModulo.UseVisualStyleBackColor = true;
 			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
 			// 
+			// btnFormula
+			// 
+			this.btnFormula.Location = new System.Drawing.Point(206, 327);
+			this.btnFormula.Name = "btnFormula";
+			this.btnFormula.Size = new System.Drawing.Size(155, 55);
+			this.btnFormula.TabIndex = 11;
+			this.btnFormula.Text = "Formula General";
+			this.btnFormula.UseVisualStyleBackColor = true;
+			this.btnFormula.Click += new System.EventHandler(this.BtnFormulaClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(587, 462);
+			this.ClientSize = new System.Drawing.Size(587, 515);
+			this.Controls.Add(this.btnFormula);
 			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.lblRespuesta);
 			this.Controls.Add(this.btnLimpiar);
@@ -167,6 +179,7 @@ namespace CalculadoraSharpDevolep
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnFormula;
 		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Label lblRespuesta;
 		private System.Windows.Forms.Button btnLimpiar;
