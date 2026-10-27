@@ -98,5 +98,10 @@ namespace CalculadoraSharpDevolep
 			f.Show();
 			this.Hide();
 		}
+		
+		void MainFormLoad(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }
