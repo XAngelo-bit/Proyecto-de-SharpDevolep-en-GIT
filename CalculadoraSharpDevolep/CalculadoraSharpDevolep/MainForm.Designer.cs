@@ -46,6 +46,7 @@ namespace CalculadoraSharpDevolep
 			this.btnMultiplicar = new System.Windows.Forms.Button();
 			this.btnLimpiar = new System.Windows.Forms.Button();
 			this.lblRespuesta = new System.Windows.Forms.Label();
+			this.btnModulo = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblNumero1
@@ -110,9 +111,9 @@ namespace CalculadoraSharpDevolep
 			// 
 			// btnMultiplicar
 			// 
-			this.btnMultiplicar.Location = new System.Drawing.Point(87, 259);
+			this.btnMultiplicar.Location = new System.Drawing.Point(11, 258);
 			this.btnMultiplicar.Name = "btnMultiplicar";
-			this.btnMultiplicar.Size = new System.Drawing.Size(157, 49);
+			this.btnMultiplicar.Size = new System.Drawing.Size(159, 49);
 			this.btnMultiplicar.TabIndex = 7;
 			this.btnMultiplicar.Text = "Multiplicar";
 			this.btnMultiplicar.UseVisualStyleBackColor = true;
@@ -120,7 +121,7 @@ namespace CalculadoraSharpDevolep
 			// 
 			// btnLimpiar
 			// 
-			this.btnLimpiar.Location = new System.Drawing.Point(323, 259);
+			this.btnLimpiar.Location = new System.Drawing.Point(402, 259);
 			this.btnLimpiar.Name = "btnLimpiar";
 			this.btnLimpiar.Size = new System.Drawing.Size(149, 49);
 			this.btnLimpiar.TabIndex = 8;
@@ -135,11 +136,22 @@ namespace CalculadoraSharpDevolep
 			this.lblRespuesta.Size = new System.Drawing.Size(568, 86);
 			this.lblRespuesta.TabIndex = 9;
 			// 
+			// btnModulo
+			// 
+			this.btnModulo.Location = new System.Drawing.Point(206, 259);
+			this.btnModulo.Name = "btnModulo";
+			this.btnModulo.Size = new System.Drawing.Size(156, 48);
+			this.btnModulo.TabIndex = 10;
+			this.btnModulo.Text = "Modulo";
+			this.btnModulo.UseVisualStyleBackColor = true;
+			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(587, 462);
+			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.lblRespuesta);
 			this.Controls.Add(this.btnLimpiar);
 			this.Controls.Add(this.btnMultiplicar);
@@ -155,6 +167,7 @@ namespace CalculadoraSharpDevolep
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Label lblRespuesta;
 		private System.Windows.Forms.Button btnLimpiar;
 		private System.Windows.Forms.Button btnMultiplicar;

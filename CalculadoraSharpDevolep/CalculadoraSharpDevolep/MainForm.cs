@@ -74,5 +74,22 @@ namespace CalculadoraSharpDevolep
 			txtCaja2.Text="";
 			lblRespuesta.Text="";			
 		}
+		
+		void BtnModuloClick(object sender, EventArgs e)
+		{
+			double num1, num2, modulo;
+			num1 = Convert.ToDouble(txtCaja1.Text);
+			num2 = Convert.ToDouble(txtCaja2.Text);
+			
+			if(num2 != 0)
+			{
+				modulo = num1 % num2;
+				lblRespuesta.Text = txtCaja1.Text +" % " +txtCaja2.Text +" = "+Convert.ToString(modulo);	
+			}
+			else
+			{
+				MessageBox.Show("No se puede dividir entre 0");
+			}
+		}
 	}
 }
